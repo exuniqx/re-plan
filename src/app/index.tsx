@@ -12,7 +12,7 @@ export default function StartScreen() {
       <Text style={styles.appName}>ちりつも</Text>
 
       <Text style={styles.title}>
-        ワクワク TEST
+        RE:PLAN
       </Text>
 
       <Text style={styles.subtitle}>
