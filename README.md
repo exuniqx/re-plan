@@ -122,6 +122,23 @@ IMAGE PHOTOとして残した「理想の体験」とREAL PHOTOとして残し�
 
 ## 開発の担当箇所
 
+### [exuniqx](https://github.com/exuniqx) の担当箇所
+
+#### 画面・機能
+- START画面
+- CHECK画面
+- PROJECT画面
+- NEW PROJECT画面
+- EVALUATE画面
+- SCORE画面
+
+#### 統合・開発
+- アプリ全体の画面統合・UIの統一
+- 統合に伴うGit上のコンフリクトの解消
+
+#### その他
+- 画面遷移図の作成
+- READMEの作成・整理
 
 
 ## 開発について
