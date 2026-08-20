@@ -6,6 +6,9 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "replan",
+    "ios": {
+      "bundleIdentifier": "com.exuniqx.replan"
+    },
     "userInterfaceStyle": "automatic",
     "android": {
       "adaptiveIcon": {
@@ -32,6 +35,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "8f4fa9cd-26bd-4a3c-a9c4-921b963b187e"
+      }
+    },
+    "owner": "exuniqx-dev"
   }
 }
