@@ -501,7 +501,7 @@ export function PlanProvider({
       }
 
       const newItem: EvaluationItem = {
-        id: `custom-${Date.now()}`,
+        id: `custom-${Date.now()}-${current.length}`,
         name: trimmedName,
         registered: false,
       };

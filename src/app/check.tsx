@@ -1,4 +1,10 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import {
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import { usePlans } from "../PlanContext";
 
 export default function CheckScreen() {
@@ -15,7 +21,10 @@ export default function CheckScreen() {
         今後の評価項目として登録するものを選択してください
       </Text>
 
-      <View style={styles.list}>
+      <ScrollView
+        style={styles.list}
+        contentContainerStyle={styles.listContent}
+      >
         {evaluationItems.map((item) => {
           const isRegistered = item.registered;
 
@@ -36,15 +45,12 @@ export default function CheckScreen() {
                   styles.actionButton,
                   isRegistered && styles.registeredButton,
                 ]}
-                onPress={() =>
-                  toggleEvaluationItem(item.id)
-                }
+                onPress={() => toggleEvaluationItem(item.id)}
               >
                 <Text
                   style={[
                     styles.actionButtonText,
-                    isRegistered &&
-                      styles.registeredButtonText,
+                    isRegistered && styles.registeredButtonText,
                   ]}
                 >
                   {isRegistered ? "−" : "＋"}
@@ -53,7 +59,7 @@ export default function CheckScreen() {
             </View>
           );
         })}
-      </View>
+      </ScrollView>
     </View>
   );
 }
@@ -80,6 +86,10 @@ const styles = StyleSheet.create({
   },
 
   list: {
+    flex: 1,
+  },
+
+  listContent: {
     gap: 12,
   },
 
